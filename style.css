@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+
+}
+body{
+    background-color: blueviolet;
+}
+ul , li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container ul{
+    display: flex;
+    
+}
+.container ul li{
+display: inline-block;
+width: 200px;
+height: 200px;
+line-height: 200px;
+text-align: center;
+background-color: #fff;
+color: blueviolet;
+font-size:60px;
+transition: 300ms all;
+
+}
+.container ul:hover li:nth-child(odd){/*çocuk seçicilerin içindeki tek sayıları seçtik*/
+    transform: skewY(-15deg);
+    box-shadow: 0 50px 0 rgba(0, 0, 0, 0.623);
+}
+.container ul:hover li:nth-child(even){/*çocuk seçicilerin içindeki çift sayıları seçtik*/
+    transform: skewY(15deg);
+    box-shadow: 0 50px 0 rgba(0, 0, 0, 0.623);
+}
+/* .container ul:hover{
+    transform: rotatez(-25deg);
+} */
